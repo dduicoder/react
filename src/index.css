@@ -1,5 +1,6 @@
 * {
   margin: 0;
+  padding: 0;
   box-sizing: border-box;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
     "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
@@ -25,11 +26,21 @@ body::-webkit-scrollbar {
   display: none;
 }
 section {
+  width: 100%;
   display: grid;
   place-items: center;
   box-shadow: 0 0 2rem rgba(0, 0, 0, 0.05);
   padding: 2rem;
+  margin-bottom: 2rem;
   border-radius: 2rem;
-  background-color: #eeeeee;
-  width: 55vw;
+  background-color: #f8f8f8;
+}
+.whole-wrapper {
+  margin-top: 10vh;
+  width: 800px;
+}
+@media (max-width: 900px) {
+  .whole-wrapper {
+    width: 100vw;
+  }
 }

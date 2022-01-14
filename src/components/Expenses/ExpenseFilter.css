@@ -1,0 +1,28 @@
+.expense-filter {
+  width: 100%;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #494949;
+  color: white;
+}
+.expense-filter__year {
+  width: 100%;
+  font-size: 1.15rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.expense-filter__year label {
+  font-weight: bold;
+}
+.expense-filter__year select {
+  padding: 1rem 3rem;
+  border: none;
+  border-radius: 10px;
+}
+.expense-filter__year select:focus-visible {
+  outline: none;
+}
