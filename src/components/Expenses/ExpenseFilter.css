@@ -7,6 +7,7 @@
   align-items: center;
   background-color: #494949;
   color: white;
+  margin-bottom: 2rem;
 }
 .expense-filter__year {
   width: 100%;

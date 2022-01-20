@@ -7,13 +7,15 @@
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  outline: none;
 }
 body {
   display: grid;
   place-items: center;
   width: 100vw;
   height: 100vh;
-  overflow: scroll;
+  overflow-y: overlay;
+  overflow-x: hidden;
   background: radial-gradient(ellipse at top, #aad7f5, transparent),
     radial-gradient(ellipse at right, #d9afd9, transparent),
     radial-gradient(ellipse at bottom, #b1e0ff, transparent),
@@ -22,8 +24,14 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
 }
-body::-webkit-scrollbar {
-  display: none;
+::-webkit-scrollbar {
+  margin-right: 5px;
+  background: transparent;
+  width: 8px;
+}
+::-webkit-scrollbar-thumb {
+  background: #919191;
+  border-radius: 1rem;
 }
 section {
   width: 100%;
@@ -31,8 +39,8 @@ section {
   place-items: center;
   box-shadow: 0 0 2rem rgba(0, 0, 0, 0.05);
   padding: 2rem;
-  margin-bottom: 2rem;
   border-radius: 2rem;
+  margin-bottom: 2rem;
   background-color: #f8f8f8;
 }
 .whole-wrapper {
