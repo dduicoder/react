@@ -1,13 +1,14 @@
 .expense-filter {
   width: 100%;
   padding: 2rem;
+  border-radius: 1.25rem;
+  margin-bottom: 1rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   background-color: #494949;
   color: white;
-  margin-bottom: 2rem;
 }
 .expense-filter__year {
   width: 100%;

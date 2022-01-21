@@ -36,8 +36,8 @@ const initExpenses = [
   },
   {
     id: "e6",
-    title: "Phone",
-    price: 999,
+    title: "Shoes",
+    price: 129,
     date: new Date(2020, 2, 3),
   },
 ];

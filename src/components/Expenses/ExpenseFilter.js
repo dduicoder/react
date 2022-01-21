@@ -6,7 +6,7 @@ const ExpenseFilter = (props) => {
   };
 
   return (
-    <div className="card expense-filter">
+    <div className="expense-filter">
       <div className="expense-filter__year">
         <label htmlFor="select-year">Filter by year</label>
         <select

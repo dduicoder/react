@@ -3,9 +3,13 @@ import ChartBar from "./ChartBar";
 
 const Chart = (props) => {
   const dataValues = props.datas.map((data) => data.value);
-  const totalMax = Math.max(...dataValues);
+  // const totalMax = Math.max(...dataValues);
+  let totalMax = 0;
+
+  for (let i = 0; i < dataValues.length; i++) {
+    totalMax += dataValues[i];
+  }
   console.log(totalMax);
-  console.log(...dataValues);
 
   return (
     <div className="chart">

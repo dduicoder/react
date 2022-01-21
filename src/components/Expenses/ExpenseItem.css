@@ -1,3 +1,21 @@
+.expense-item {
+  border-radius: 1.25rem;
+  height: 7rem;
+  padding: 1rem;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #50586c;
+  color: #dce2f0;
+  transition: all 0.3s ease-in-out;
+  list-style: none;
+}
+
+.expense-item:hover {
+  transform: translate(-5px, -5px);
+  box-shadow: 5px 5px 0 rgba(0, 0, 0, 0.5);
+}
 .expense-item__description {
   height: 5rem;
   display: flex;

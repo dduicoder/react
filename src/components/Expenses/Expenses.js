@@ -3,8 +3,6 @@ import React, { useState } from "react";
 import ExpenseFilter from "./ExpenseFilter";
 import ExpenseList from "./ExpenseList";
 import ExpenseChart from "./ExpensesChart";
-import "./Expense.css";
-
 const Expenses = (props) => {
   const [filteredYear, setFilteredYear] = useState("all");
 
@@ -12,9 +10,12 @@ const Expenses = (props) => {
     setFilteredYear(selectedYear);
   };
 
-  const filteredExpenses = props.items.filter((expense) => {
-    return expense.date.getFullYear().toString() === filteredYear;
-  });
+  const filteredExpenses =
+    filteredYear === "all"
+      ? props.items
+      : props.items.filter((expense) => {
+          return expense.date.getFullYear().toString() === filteredYear;
+        });
 
   return (
     <section>
