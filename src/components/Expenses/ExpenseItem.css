@@ -12,10 +12,10 @@
   list-style: none;
 }
 
-.expense-item:hover {
+/* .expense-item:hover {
   transform: translate(-5px, -5px);
   box-shadow: 5px 5px 0 rgba(0, 0, 0, 0.5);
-}
+} */
 .expense-item__description {
   height: 5rem;
   display: flex;
@@ -23,6 +23,7 @@
   align-items: center;
   gap: 1rem;
 }
+
 .expense-item__date,
 .expense-item__price {
   border-radius: 1rem;
@@ -33,37 +34,45 @@
   background-color: #dce2f0;
   transition: all 0.3s ease-in-out;
 }
+
 .expense-item__title {
   font-size: 1.2rem;
   font-weight: bold;
 }
+
 .expense-item__date {
   height: 5rem;
   flex-direction: column;
   justify-content: space-between;
 }
+
 .expense-item__price {
   height: 4rem;
   font-size: 1.2rem;
   font-weight: bold;
 }
+
 .expense-item__date span {
   font-weight: 500;
 }
+
 .expense-item__date span:first-child {
   margin-top: 0.5rem;
   margin-bottom: -2px;
   font-size: 0.85rem;
 }
+
 .expense-item__date span:nth-child(2) {
   font-size: 1.15rem;
 }
+
 .expense-item__date span:last-child {
   margin-bottom: 0.5rem;
   margin-top: -6px;
   font-size: 1.5rem;
   font-weight: 700;
 }
+
 .expense-item__price:hover,
 .expense-item__date:hover {
   color: #dce2f0;
